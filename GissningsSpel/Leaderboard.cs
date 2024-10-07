@@ -17,7 +17,7 @@ public class Leaderboard
 
     public void LeaderBoard()
     {
-        Console.WriteLine("=== LEADERBOARD ===");
+        Console.WriteLine("\n====== LEADERBOARD ======");
         for (int i = 0; i < NameToArray.Length; i++)
         {
             Console.WriteLine($"Namn: {NameToArray[i]} - Försök: {GuessesToArray[i]}");

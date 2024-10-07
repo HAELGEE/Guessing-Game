@@ -55,11 +55,13 @@ public class Level
             }
             else if (Guess == RandomNumber)
             {
+                
                 leaderboard.Attempts++;
                 leaderboard.AddingToStringArray(Leaderboard.Name);
                 leaderboard.AddingToIntArray(leaderboard.Attempts);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 stopwatch.Stop();
+                Console.Clear();
                 Console.WriteLine($"Grattis du gissade rätt på Nummer: {Guess} med {leaderboard.Attempts} försök och {stopwatch.Elapsed} sekunder ");
                 Console.ResetColor();
                 leaderboard.Attempts = 0;
